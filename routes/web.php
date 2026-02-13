@@ -85,8 +85,6 @@ Route::middleware(['auth', 'role:admin'])
             ->name('reports.stock');
         Route::get('reports/movement', [ReportController::class, 'movement'])
             ->name('reports.movement');
-        Route::get('reports/loan', [ReportController::class, 'loan'])
-            ->name('reports.loan');
 
         // Profile
         Route::get('/profile', [AdminProfileController::class, 'edit'])->name('profile.edit');

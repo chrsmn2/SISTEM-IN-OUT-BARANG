@@ -44,11 +44,6 @@ class Item extends Model
         return $this->hasMany(OutgoingItemDetail::class, 'item_id');
     }
 
-    public function loanDetails()
-    {
-        return $this->hasMany(LoanDetail::class, 'item_id');
-    }
-
         public function conditionBadge()
     {
         return match (strtolower(trim($this->condition))) {

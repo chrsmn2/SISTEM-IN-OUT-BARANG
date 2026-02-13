@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Item;
-use App\Models\Loan;
 use App\Models\Category;
 use App\Models\IncomingItem;
 use App\Models\OutgoingItem;

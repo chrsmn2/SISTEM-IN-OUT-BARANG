@@ -55,16 +55,5 @@ class User extends Authenticatable
         ];
     }
 
-    // Loan yang dibuat admin
-    public function loans()
-    {
-        return $this->hasMany(Loan::class, 'admin_id');
-    }
-
-    // Loan yang di-approve supervisor
-    public function approvedLoans()
-    {
-        return $this->hasMany(Loan::class, 'approved_by');
-    }
 
 }
